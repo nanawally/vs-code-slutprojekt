@@ -29,51 +29,40 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Länkar</h2>
-            <a href="https://github.com/nanawally">Github</a>
+    <main class="contact-main">
+        <section class="contact-links">
+            <h2>Links</h2>
+            <article>
+                <a href="https://github.com/nanawally">Github home</a>
+            </article>
+            <article>
+                <a href="https://github.com/nanawally/Adventure-Game">Adventure Game</a>
+            </article>
+            <article>
+                <a href="https://github.com/nanawally/Home-Invasion-Game">Home Invasion Game</a>
+            </article>
+        </section>
+        <section class="contact-links">
+            <article>
+                <a href="tel:+46222222">Call me</a>
+            </article>
+            <article>
+                <a href="mailto:amj.wallstrom@gmail.com">Send me an email</a>
+            </article>
         </section>
         <section>
-            <h2>Kontaktformulär</h2>
-            <form action="/submit" method="post" class="light-pink-background">
-                <!--Namn-->
-                <label for="name">Namn:</label>
+            <h2>Send a message</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-
                 <br>
-
-                <!--Epost-->
-                <label for="email">Epost:</label>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
                 <br>
-
-                <!--Rullista-->
-                <label for="food">Välj potatistyp:</label>
-                <select id="food" name="food">
-                    <option value="edward">King Edward</option>
-                    <option value="yukon">Yukon Gold</option>
-                    <option value="russet">Russet potato</option>
-                </select>
-
-                <br>
-
-                <!--Meddelande-->
-                <label for="message">Meddelande:</label>
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" cols="50"></textarea>
-
                 <br>
-
-                <!--Kryssruta-->
-                <p>Godkänner du integritetspolicyn?</p>
-                <input type="checkbox" id="policy" name="yes" value="policy">
-                <label for="policy">Ja</label>
-
-                <br>
-
-                <!--Skicka-knapp-->
-                <input type="submit" value="Skicka">
+                <input type="submit" value="Send">
             </form>
         </section>
     </main>

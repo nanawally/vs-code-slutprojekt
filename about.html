@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <nav class="topnav">
             <!--<a href="#home" class="active">Anna Wallström</a>-->
             <h1 class="active">Anna Wallström</h1>
-            
+
             <section id="myLinks">
                 <a href="index.html">Homepage</a>
                 <a href="about.html">About Me</a>
                 <a href="tech.html">Technical Competence</a>
                 <a href="contact.html">Contact Me</a>
             </section>
-            
+
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <img src="images/self-portrait.jpg" alt="Porträtt">
+    <main class="aboutmain">
+        <section class="content">
+            <article class="portrait">
+                <img src="images/self-portrait.jpg" alt="Portrait">
+            </article>
+            <article class="text-box">
+                <h2>About me</h2>
+                <p>Hi, I'm Anna, a passionate Java developer with a strong foundation in computer science. I recently
+                    graduated with a degree in Java Fullstack, where I focused on honing my skills in software
+                    development, problem-solving, and application design.
+                    <br>
+                    <br>
+                    With a deep interest in programming, I've spent countless hours mastering Java, along with exploring
+                    web and mobile development technologies. I'm always eager to learn new tools and frameworks to stay
+                    ahead of the curve and build innovative, scalable solutions.
+                    <br>
+                    <br>
+                    I approach every project with a combination of creativity, precision, and a commitment to writing
+                    clean, maintainable code. Whether working independently or as part of a team, I believe that
+                    communication, collaboration, and continuous learning are the keys to success.
+                    <br>
+                    <br>
+                    When I'm not coding, you'll find me exploring new tech trends, solving coding challenges, or working
+                    on personal projects to sharpen my skills further.
+                    <br>
+                    <br>
+                    I'm excited to take on new challenges and look forward to contributing to exciting, impactful
+                    projects.
+                </p>
+            </article>
         </section>
-        <section>
-
-        </section>
-        
     </main>
 
     <footer>
@@ -41,4 +67,5 @@
     </footer>
     <script src="app.js"></script>
 </body>
+
 </html>
