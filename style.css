@@ -5,7 +5,39 @@ body {
   background-size: cover;
 }
 
+header {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-image {
+  width: 100%;
+  /* full bredd */
+  height: 400px;
+  object-fit: cover;
+  /* täcker hela området utan att förvrängas */
+  display: block;
+  /* tar bort eventuella mellanrum runt bilden */
+  opacity: 0.75;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background: #fff;
+  opacity: 0.75;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   line-height: 60px;
   background-color: #321147;
   padding-left: 20px;
@@ -20,11 +52,6 @@ body {
 
 label {
   display: block;
-}
-
-img {
-  width: 400px;
-  height: 400px;
 }
 
 /* Style the navigation menu */
@@ -55,6 +82,9 @@ img {
   position: absolute;
   right: 0;
   top: 0;
+  font-size: 2em;
+  width: auto;
+  height: auto;
 }
 
 /* Add a grey background color on mouse-over */
@@ -67,4 +97,88 @@ img {
 .active {
   background-color: #321147;
   color: azure;
+}
+
+.center {
+  text-align: center;
+}
+
+.techrubric {
+  text-align: center;
+  color: azure;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.techmain {
+  display: flex;
+  /* Aktiverar Flexbox */
+  flex-wrap: wrap;
+  /* Tillåter radbrytning */
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.post1,
+.post2,
+.post3,
+.post4,
+.post5,
+.post6 {
+  width: 30%;
+  background: #fff;
+  opacity: 0.75;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+
+  .post1,
+  .post2,
+  .post3,
+  .post4,
+  .post5,
+  .post6 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .post1,
+  .post2,
+  .post3,
+  .post4,
+  .post5,
+  .post6 {
+    width: 100%;
+    /* Alla element i en kolumn */
+  }
+}
+
+.post img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.post h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.post p {
+  margin: 5px 0;
 }
