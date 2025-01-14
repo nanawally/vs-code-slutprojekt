@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <nav class="topnav">
+            <a href="#home" class="active">Anna Wallström</a>
+
+            <section id="myLinks">
+                <a href="index.html">Homepage</a>
+                <a href="about.html">About Me</a>
+                <a href="tech.html">Technical Competence</a>
+                <a href="contact.html">Contact Me</a>
+            </section>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Länkar</h2>
+            <a href="https://github.com/nanawally">Github</a>
+        </section>
+        <section>
+            <h2>Kontaktformulär</h2>
+            <form action="/submit" method="post" class="light-pink-background">
+                <!--Namn-->
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br>
+
+                <!--Epost-->
+                <label for="email">Epost:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br>
+
+                <!--Rullista-->
+                <label for="food">Välj potatistyp:</label>
+                <select id="food" name="food">
+                    <option value="edward">King Edward</option>
+                    <option value="yukon">Yukon Gold</option>
+                    <option value="russet">Russet potato</option>
+                </select>
+
+                <br>
+
+                <!--Meddelande-->
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+                <br>
+
+                <!--Kryssruta-->
+                <p>Godkänner du integritetspolicyn?</p>
+                <input type="checkbox" id="policy" name="yes" value="policy">
+                <label for="policy">Ja</label>
+
+                <br>
+
+                <!--Skicka-knapp-->
+                <input type="submit" value="Skicka">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        Anna Wallström, 2025
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

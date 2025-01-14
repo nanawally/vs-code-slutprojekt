@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Competence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <nav class="topnav">
+            <a href="#home" class="active">Anna Wallström</a>
+            
+            <section id="myLinks">
+                <a href="index.html">Homepage</a>
+                <a href="about.html">About Me</a>
+                <a href="tech.html">Technical Competence</a>
+                <a href="contact.html">Contact Me</a>
+            </section>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-products">
+            <h2 class="center">Våra produkter</h2>
+            <div class="products">
+                <article class="product">
+                    <img src="images/fries.jpg" alt="Pommes frites">
+                    <h3>Fries</h3>
+                    <p>Thin potato. Deep fried. Hence name.</p>
+                    <p>Pris: 10000 SEK</p>
+                    <button class="lagg-till-knapp">Lägg till i kundvagn</button>
+                </article>
+                <br>
+                <article class="product">
+                    <img src="images/mash.jpg" alt="Potatismos">
+                    <h3>Mashed potato</h3>
+                    <p>Mosad potatis. Mjuk.</p>
+                    <p>Pris: 312687 SEK</p>
+                    <button class="lagg-till-knapp">Lägg till i kundvagn</button>
+                </article>
+                <br>
+                <article class="product">
+                    <img src="images/gratain.jpg" alt="Potatisgratäng">
+                    <h3>Gratain</h3>
+                    <p>Skivad potatis i ugn.</p>
+                    <p>Pris: 31289 SEK</p>
+                    <button class="lagg-till-knapp">Lägg till i kundvagn</button>
+                </article>
+            </div>
+        </section>
+        <section id="kundvagn">
+            <h2>Kundvagn</h2>
+            <ul id="kundvagn-lista">
+                <!-- Produkter läggs till här med JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        Anna Wallström, 2025
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

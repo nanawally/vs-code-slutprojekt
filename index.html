@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <nav class="topnav">
+            <a href="#home" class="active">Anna Wallström</a>
+            <!-- Navigation links (hidden by default) -->
+            <section id="myLinks">
+                <a href="index.html">Homepage</a>
+                <a href="about.html">About Me</a>
+                <a href="tech.html">Technical Competence</a>
+                <a href="contact.html">Contact Me</a>
+            </section>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <img id="hero-image" alt="Huvudbild">
+        </section>
+        <section class="featured-products">
+            <h2 class="center">Våra produkter</h2>
+            
+            <article class="products">
+                <div class="product">
+                    <img src="images/tech-images/img1.jpg" alt="Pommes frites" height="183px">
+                    <h3>Product 1</h3>
+                    <p>description</p>
+                    <p>price</p>
+                </div>
+                <div class="product">
+                    <img src="images/tech-images/img2.jpg" alt="Potatismos" height="183px">
+                    <h3>Product 2</h3>
+                    <p>description</p>
+                    <p>price</p>
+                </div>
+                <div class="product">
+                    <img src="images/gratain.jpg" alt="Potatisgratäng" height="183px">
+                    <h3>Product 3</h3>
+                    <p>description</p>
+                    <p>price</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        Anna Wallström, 2025
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
