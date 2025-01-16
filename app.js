@@ -1,5 +1,5 @@
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
+function toggleMenu() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -7,6 +7,29 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+window.onload = function() {
+  var x = document.getElementById("myLinks");
+  x.style.display = "none"; // Ensure the menu is closed by default
+}
+
+/*
+function toggleMenu() {
+  var x = document.getElementById("myLinks");
+  x.classList.toggle("active");
+}
+*/
+
+// Ensure the menu is closed when a new page loads (in mobile view)
+/*
+window.addEventListener('load', function() {
+  var x = document.getElementById("myLinks");
+  if (window.innerWidth <= 768) {
+    x.classList.remove("active");
+  }
+});
+*/
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const keywordFilter = document.getElementById('keywordFilter');

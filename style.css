@@ -56,7 +56,6 @@ header {
   /* Optional, you can adjust this width */
 }
 
-
 footer {
   position: relative;
   /* Change to relative so it no longer overlaps */
@@ -109,6 +108,7 @@ label {
   font-size: 2em;
   width: auto;
   height: auto;
+  padding: 14px 16px;
 }
 
 /* Add a grey background color on mouse-over */
@@ -119,6 +119,7 @@ label {
 
 /* Style the active link (or home/logo) */
 .active {
+  padding-left: 20px;
   background-color: #321147;
   color: azure;
 }
@@ -132,16 +133,13 @@ label {
   height: auto;
 }
 
-
 .aboutmain {
   display: flex;
   justify-content: center;
-  /* Center content horizontally */
   align-items: center;
-  /* Center content vertically */
   min-height: 100vh;
-  /* Take at least full viewport height */
   padding: 20px;
+  flex-direction: column;
 }
 
 /* Flex container for text and portrait */
@@ -228,7 +226,6 @@ label {
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Apply Flexbox to the main container */
 .contact-main {
@@ -337,6 +334,7 @@ form textarea {
 .contact-main form input[type="submit"] {
   background-color: #340138;
   color: white;
+  font-weight: bold;
   border: none;
   cursor: pointer;
   padding: 10px;
@@ -352,26 +350,12 @@ form textarea {
 
 
 
-
-
-
-
-
 .techrubric {
   text-align: center;
   color: azure;
   font-family: 'Courier New', Courier, monospace;
 }
 
-/*
-.techmain {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100px;
-  text-align: center;
-  justify-content: center;
-}
-*/
 .posts {
   display: flex;
   flex-wrap: wrap;
@@ -500,20 +484,135 @@ label {
   /* Lighter background when focused */
 }
 
-/* For small screens (adjust dropdown size for mobile) */
+@media screen and (max-width: 768px) {
+  .aboutmain {
+    flex-direction: column;
+    /* Stack content vertically on smaller screens */
+  }
+
+  .content {
+    flex-direction: column;
+    /* Stack text and image vertically */
+    align-items: center;
+    /* Center content */
+    gap: 20px;
+  }
+
+  .portrait {
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
+  }
+
+  /* Adjust portrait image size */
+  .portrait img {
+    width: 200px;
+    /* Smaller portrait for mobile */
+  }
+
+  /* Make the navigation links stack vertically in the hamburger menu */
+  .topnav #myLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    background-color: #321147;
+    padding-top: 10px;
+  }
+
+  /* Ensure the hamburger menu icon is aligned correctly */
+  .topnav a.icon {
+    display: block;
+    padding: 10px;
+    font-size: 2em;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutmain {
+    padding: 10px;
+    /* Less padding on very small screens */
+  }
+
+  .content {
+    gap: 15px;
+    /* Reduced space between elements */
+  }
+
+  /* Adjust text box width */
+  .text-box {
+    max-width: 90%;
+    padding: 15px;
+    /* Less padding on smaller screens */
+  }
+
+  .portrait {
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
+  }
+
+  .portrait img {
+    width: 150px;
+    /* Further reduce image size */
+  }
+
+  .topnav #myLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  /* Reduce font size on smaller screens */
+  .topnav a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .post1,
+  .post2,
+  .post3,
+  .post4,
+  .post5,
+  .post6 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .post1,
+  .post2,
+  .post3,
+  .post4,
+  .post5,
+  .post6 {
+    width: 85%;
+  }
+}
+
+/* Adjust dropdown menu width */
 @media screen and (max-width: 768px) {
   #keywordFilter {
-    width: 100%;
-    /* Allow the dropdown to take full width on smaller screens */
+    width: 90%;
     max-width: 300px;
-    /* Set max width for better responsiveness */
   }
 }
 
 @media screen and (max-width: 500px) {
   #keywordFilter {
-    width: 100%;
-    /* Ensure it stretches to full width on very small screens */
+    width: 90%;
     padding: 12px 15px;
   }
 }
