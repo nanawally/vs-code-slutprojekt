@@ -23,7 +23,7 @@ header {
 .hero-image {
   width: 100%;
   /* full bredd */
-  height: 400px;
+  height: auto;
   object-fit: cover;
   /* täcker hela området utan att förvrängas */
   display: block;
