@@ -13,24 +13,6 @@ window.onload = function() {
   x.style.display = "none"; // Ensure the menu is closed by default
 }
 
-/*
-function toggleMenu() {
-  var x = document.getElementById("myLinks");
-  x.classList.toggle("active");
-}
-*/
-
-// Ensure the menu is closed when a new page loads (in mobile view)
-/*
-window.addEventListener('load', function() {
-  var x = document.getElementById("myLinks");
-  if (window.innerWidth <= 768) {
-    x.classList.remove("active");
-  }
-});
-*/
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const keywordFilter = document.getElementById('keywordFilter');
   const articles = document.querySelectorAll('article');
