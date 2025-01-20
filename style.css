@@ -350,6 +350,64 @@ form textarea {
 
 
 
+
+@media screen and (max-width: 768px) {
+  .contact-main {
+    width: 80%;
+  }
+}
+
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/* this one doesn't work for some reason */
+@media screen and (max-width: 500px) {
+  .contact-main,
+  .contact-links {
+    max-width: 85%;
+  }
+}
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+.cv-individual-posts {
+  width: 40%;
+  background: #fff;
+  opacity: 0.75;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cv-individual-posts ul {
+  text-align: start;
+}
+
+@media screen and (max-width: 768px) {
+  .cv-individual-posts {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cv-individual-posts {
+    width: 85%;
+  }
+}
+
 .techrubric {
   text-align: center;
   color: azure;
@@ -579,7 +637,6 @@ label {
 }
 
 @media screen and (max-width: 768px) {
-
   .post1,
   .post2,
   .post3,
@@ -591,7 +648,6 @@ label {
 }
 
 @media screen and (max-width: 500px) {
-
   .post1,
   .post2,
   .post3,

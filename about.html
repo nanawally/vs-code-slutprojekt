@@ -33,10 +33,13 @@
     <main class="aboutmain">
         <section class="content">
             <article class="portrait">
-                <img src="images/self-portrait.jpg" alt="Portrait">
+                <img src="images/self-portrait.jpg"
+                srcset="images/self-portrait-500.jpg 500w, images/self-portrait-768.jpg 768w"
+                sizes="(max-width: 500px) 500px, (max-width: 768px) 768px, 1200px"
+                alt="Portrait">
             </article>
             <article class="text-box">
-                <h2>About me</h2>
+                <h2 style="font-family: 'Courier New', Courier, monospace;">About me</h2>
                 <p>Hi, I'm Anna, a passionate Java developer with a strong foundation in computer science. I recently
                     graduated with a degree in Java Fullstack, where I focused on honing my skills in software
                     development, problem-solving, and application design.
