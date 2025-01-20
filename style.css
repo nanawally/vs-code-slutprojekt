@@ -203,54 +203,36 @@ label {
 .contact-main {
   display: flex;
   flex-direction: column;
-  /* Stack the boxes vertically */
   align-items: center;
-  /* Center all sections horizontally */
   gap: 20px;
-  /* Space between the boxes */
   margin: 20px;
-  /* Add some space around the main container */
   max-width: 1200px;
-  /* Max-width to prevent it from becoming too wide */
   width: 100%;
-  /* Ensure it takes full width */
   margin-left: auto;
   margin-right: auto;
   opacity: 0.85;
 }
 
-/* Style each section as a box */
 .contact-main section {
   flex: 1;
-  /* Make each section flexible */
-  /*min-width: 280px;*/
   min-width: 240px;
-  /* Set a minimum width for each box */
   background-color: #f4f4f4;
-  /* Light background color for the box */
   padding: 20px;
-  /* Add padding inside the box */
   border-radius: 8px;
-  /* Round the corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Add subtle shadow for a 3D effect */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* Align content at the top */
   width: 100%;
-  /* Ensure each section takes full width available */
   max-width: 500px;
 }
 
-/* Style the headings */
 .contact-main h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
   color: #000000;
 }
 
-/* Style the links */
 .contact-links a,
 section a {
   color: #000000;
@@ -267,25 +249,17 @@ section a:hover {
 section>article {
   display: flex;
   justify-content: space-between;
-  /* Distribute the articles evenly */
   width: 100%;
-  /* Ensure articles take full width available */
 }
 
 section>article a {
   flex: 1;
-  /* Make each link take up equal space */
   text-align: center;
-  /* Center the text inside each link */
   margin: 5px;
-  /* Space between the articles */
   padding: 10px;
   background-color: #f4f4f4;
-  /* Light background for the links */
   border-radius: 8px;
-  /* Round the corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow */
 }
 
 section>article a:hover {
@@ -293,7 +267,6 @@ section>article a:hover {
   color: #000000;
 }
 
-/* Add some styling to the form fields */
 .contact-main form input,
 form textarea {
   width: 95%;
@@ -303,7 +276,6 @@ form textarea {
   border-radius: 4px;
 }
 
-/* Style the submit button */
 .contact-main form input[type="submit"] {
   background-color: #340138;
   color: white;
@@ -320,41 +292,11 @@ form textarea {
   color: #000000;
 }
 
-
-
-
-
 @media screen and (max-width: 768px) {
   .contact-main {
     width: 80%;
   }
 }
-
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-/* this one doesn't work for some reason */
-@media screen and (max-width: 500px) {
-
-  .contact-main,
-  .contact-links {
-    max-width: 10%;
-  }
-}
-
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-
-
-
-
-
-
-
-
 
 .cv-individual-posts {
   width: 40%;
@@ -434,7 +376,6 @@ form textarea {
   .post5,
   .post6 {
     width: 100%;
-    /* Alla element i en kolumn */
   }
 }
 
@@ -454,7 +395,7 @@ form textarea {
   margin: 5px 0;
 }
 
-/* Style the select (dropdown) menu */
+/* Dropdown menu */
 #keywordFilter {
   font-size: 1.1em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -468,17 +409,14 @@ form textarea {
   margin-bottom: 20px;
 }
 
-/* Center the filter drop-down and label */
 .keyword-filter-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  /* Add space between dropdown and other content */
 }
 
-/* Center content in the page */
 .main-content {
   display: flex;
   flex-direction: column;
@@ -490,49 +428,37 @@ form textarea {
   margin: 0 auto;
 }
 
-/* Add some space between label and dropdown */
 label {
   font-size: 1.2em;
   margin-bottom: 10px;
   color: #000;
 }
 
-/* Style the text on hover and focus of the dropdown */
 #keywordFilter:hover,
 #keywordFilter:focus {
   border-color: #340138;
-  /* Darker border on hover/focus */
   outline: none;
-  /* Remove the default outline */
   background-color: #f8f8f8;
-  /* Lighter background when focused */
 }
 
 @media screen and (max-width: 768px) {
   .aboutmain {
     flex-direction: column;
-    /* Stack content vertically on smaller screens */
   }
 
   .content {
     flex-direction: column;
-    /* Stack text and image vertically */
     align-items: center;
-    /* Center content */
     gap: 20px;
   }
 
   .portrait {
     justify-content: center;
-    /* Center the image horizontally */
     align-items: center;
-    /* Center the image vertically */
   }
 
-  /* Adjust portrait image size */
   .portrait img {
     width: 200px;
-    /* Smaller portrait for mobile */
   }
 
   /* Make the navigation links stack vertically in the hamburger menu */
@@ -546,7 +472,7 @@ label {
     padding-top: 10px;
   }
 
-  /* Ensure the hamburger menu icon is aligned correctly */
+  /* Align the hamburger icon */
   .topnav a.icon {
     display: block;
     padding: 10px;
@@ -560,31 +486,24 @@ label {
 @media screen and (max-width: 500px) {
   .aboutmain {
     padding: 10px;
-    /* Less padding on very small screens */
   }
 
   .content {
     gap: 15px;
-    /* Reduced space between elements */
   }
 
-  /* Adjust text box width */
   .text-box {
     max-width: 90%;
     padding: 15px;
-    /* Less padding on smaller screens */
   }
 
   .portrait {
     justify-content: center;
-    /* Center the image horizontally */
     align-items: center;
-    /* Center the image vertically */
   }
 
   .portrait img {
     width: 150px;
-    /* Further reduce image size */
   }
 
   .topnav #myLinks {
@@ -596,7 +515,6 @@ label {
     padding: 15px;
   }
 
-  /* Reduce font size on smaller screens */
   .topnav a {
     font-size: 14px;
   }
