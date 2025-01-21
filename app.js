@@ -1,4 +1,3 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function toggleMenu() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -10,7 +9,7 @@ function toggleMenu() {
 
 window.onload = function() {
   var x = document.getElementById("myLinks");
-  x.style.display = "none"; // Ensure the menu is closed by default
+  x.style.display = "none"; // hamburgarmenyn är stängd by default
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -21,14 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const selectedKeyword = keywordFilter.value.toLowerCase();
 
     articles.forEach(function (article) {
-      // Get the keywords for the current article
+      // ta keywords till varje artikel
       const keywords = article.getAttribute('data-keywords').toLowerCase().split(', ');
 
-      // Check if the selected keyword matches the article's keywords
+      // kolla om det valda keywordet matchar artikelns keyword
       if (selectedKeyword === 'all' || keywords.includes(selectedKeyword)) {
-        article.style.display = 'block';  // Show the article
+        article.style.display = 'block';  // visa artikeln
       } else {
-        article.style.display = 'none';   // Hide the article
+        article.style.display = 'none';   // göm artikeln
       }
     });
   });
